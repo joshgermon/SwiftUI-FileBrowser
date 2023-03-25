@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD2F4B4529C33EE700F117F6 /* SwiftUI_Sidebar_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F4B4429C33EE700F117F6 /* SwiftUI_Sidebar_AppApp.swift */; };
 		CD2F4B4729C33EE700F117F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F4B4629C33EE700F117F6 /* ContentView.swift */; };
 		CD2F4B4929C33EE800F117F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2F4B4829C33EE800F117F6 /* Assets.xcassets */; };
 		CD2F4B4C29C33EE800F117F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2F4B4B29C33EE800F117F6 /* Preview Assets.xcassets */; };
+		CD7C761229CECCC00002DC5F /* DirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C761129CECCC00002DC5F /* DirectoryView.swift */; };
+		CD7C761629CED7870002DC5F /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C761529CED7870002DC5F /* ImageFile.swift */; };
+		CD7C761829CED84A0002DC5F /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C761729CED84A0002DC5F /* FileManagerExtensions.swift */; };
+		CD7C761C29CEE9A30002DC5F /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C761B29CEE9A30002DC5F /* AppView.swift */; };
+		CD7C761E29CEEF5F0002DC5F /* DirectoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C761D29CEEF5F0002DC5F /* DirectoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD2F4B4129C33EE700F117F6 /* SwiftUI Sidebar App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Sidebar App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD2F4B4429C33EE700F117F6 /* SwiftUI_Sidebar_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Sidebar_AppApp.swift; sourceTree = "<group>"; };
 		CD2F4B4629C33EE700F117F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD2F4B4829C33EE800F117F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD2F4B4B29C33EE800F117F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD2F4B4D29C33EE800F117F6 /* SwiftUI_Sidebar_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUI_Sidebar_App.entitlements; sourceTree = "<group>"; };
+		CD7C761129CECCC00002DC5F /* DirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryView.swift; sourceTree = "<group>"; };
+		CD7C761529CED7870002DC5F /* ImageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
+		CD7C761729CED84A0002DC5F /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
+		CD7C761B29CEE9A30002DC5F /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		CD7C761D29CEEF5F0002DC5F /* DirectoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +60,15 @@
 		CD2F4B4329C33EE700F117F6 /* SwiftUI Sidebar App */ = {
 			isa = PBXGroup;
 			children = (
-				CD2F4B4429C33EE700F117F6 /* SwiftUI_Sidebar_AppApp.swift */,
+				CD7C761D29CEEF5F0002DC5F /* DirectoryModel.swift */,
+				CD7C761729CED84A0002DC5F /* FileManagerExtensions.swift */,
 				CD2F4B4629C33EE700F117F6 /* ContentView.swift */,
+				CD7C761B29CEE9A30002DC5F /* AppView.swift */,
+				CD7C761129CECCC00002DC5F /* DirectoryView.swift */,
 				CD2F4B4829C33EE800F117F6 /* Assets.xcassets */,
 				CD2F4B4D29C33EE800F117F6 /* SwiftUI_Sidebar_App.entitlements */,
 				CD2F4B4A29C33EE800F117F6 /* Preview Content */,
+				CD7C761529CED7870002DC5F /* ImageFile.swift */,
 			);
 			path = "SwiftUI Sidebar App";
 			sourceTree = "<group>";
@@ -139,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7C761229CECCC00002DC5F /* DirectoryView.swift in Sources */,
 				CD2F4B4729C33EE700F117F6 /* ContentView.swift in Sources */,
-				CD2F4B4529C33EE700F117F6 /* SwiftUI_Sidebar_AppApp.swift in Sources */,
+				CD7C761C29CEE9A30002DC5F /* AppView.swift in Sources */,
+				CD7C761E29CEEF5F0002DC5F /* DirectoryModel.swift in Sources */,
+				CD7C761629CED7870002DC5F /* ImageFile.swift in Sources */,
+				CD7C761829CED84A0002DC5F /* FileManagerExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
